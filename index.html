@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes app</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <section class="note-wrapper">
+    <!-- notes list wrapper -->
+    <aside class="notes-list-wrapper">
+      <header>
+        <h1>RF Notes</h1>
+        <button class="add-note-btn">+</button>
+      </header>
+
+      <ul class="notes-list"></ul>
+    </aside>
+  
+    <!-- note details -->
+    <form class="note-details">
+      <input type="text" name="title" placeholder="title">
+      <textarea name="details" cols="30" rows="10" placeholder="details"></textarea>
+      <button type="button" class="delete-note-btn">delete</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
