@@ -1,5 +1,5 @@
 ## About app:
-simple note taking app using html css js. minimal UI, functionality focused version.
+simple note taking *chrome extension* using html css js. minimal UI, functionality focused version.
 
 *features:*
 - add, delete, update note

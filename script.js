@@ -4,8 +4,7 @@ const notesListEl = document.querySelector('.notes-list')
 const noteDetailsEl = document.querySelector('.note-details')
 
 const initNotes = [
-  {id: '1', title: 'note 1', details: 'details1 lorem asdf aksf asdf'},
-  {id: '2', title: 'note 2', details: 'details2 lorem asdf aksf asdf'},
+  {id: '1', title: 'dummy note', details: 'This is a dummy note. you can add new note, delete it or edit it.'},
 ]
 let notes = []
 let currNoteId = null;
@@ -13,7 +12,7 @@ let currNoteId = null;
 // ## Functions:
 // ### localStorage
 function getNotesLS() {
-  return localStorage.getItem('rf:notes') ? JSON.parse(localStorage.getItem('rf:notes')) : []
+  return localStorage.getItem('rf:notes') ? JSON.parse(localStorage.getItem('rf:notes')) : initNotes
 }
 function setNotesLS() {
   localStorage.setItem('rf:notes' ,JSON.stringify(notes))
